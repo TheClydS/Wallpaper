@@ -1,6 +1,6 @@
 /*
  * Name : window.h
- * Auteur : NICOLAS FILIPPOZZI
+ * Auteur : TheClyds
  * Date : 21 septembre 2016
  * Version : 0.1a
  * Description : Programe Wallpaper permet de modifier le fond d'écran

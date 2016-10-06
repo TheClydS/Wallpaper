@@ -1,6 +1,6 @@
 /*
  * Name : fonctions.c
- * Auteur : NICOLAS FILIPPOZZI
+ * Auteur : TheClyds
  * Date : 30 september 2016
  * Version : 0.1a
  * Description : Page de fonctions

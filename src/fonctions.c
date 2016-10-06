@@ -142,7 +142,6 @@
 				}
 			}
 			closedir(rep);
-			tmp=delListElement(tmp,-1);
 			return tmp;
 		}
 	/* 2-2)Fichiers*/

@@ -49,27 +49,8 @@
 			const char* file;					//Nom du fichier
 			int duree;							//Durée d'affichage d'une image si type = 6
 		};
-	/* 1-2) Allocation de la mémoire pour les  structures */
-		//Initialisation de la structure Win
-		static Win alloc(void){
-			//printf("Fonction alloc.\n");
-			Win win;												//Initialisation à null
-			
-			win=malloc(sizeof(struct _Win)+2);						//Allocation de la mémoire à la structure
-			
-			win->x=0,win->y=0;win->w=0,win->h=0;					//Valeur par défault
-			win->dpy=NULL;											//Valeur par défault
-			win->vis=0;												//Initialisation à null
-			win->scr=NULL;											//Initialisation à null
-			win->win=0;												//Valeur par défault
-			win->depth=0;											//Valeur par défault	
-			win->cm=0;												//Valeur par défault
-			win->screen=0;											//Valeur par défault
-				
-			//printf("Fonction Alloc fin.\n");
-			return win;
-		}
-		//Initialisation de la structure Img
+	/* 1-2) Allocation de la mémoire */
+		//structure Img
 		static Img allocImg(void){
 			//printf("Fonction allocImg\n");
 			Img img;
@@ -83,20 +64,6 @@
 			
 			//printf("Fonction allocImg\n");
 			return img;
-		}
-		//Initialisation de la structure OptAff
-		static OptAff allocOpt(void){
-			//printf("Fonction allocOpt\n");
-			OptAff opt;
-			
-			opt=malloc(sizeof(struct _OptAff)+2);
-			
-			opt->type=0;
-			opt->file=NULL;
-			opt->duree=0;
-			
-			//printf("Fonction allocOpt fin\n");
-			return opt;
 		}
 	/* 1-3) Initialisation de la structure Win */
 		//Initialisation de la structure win

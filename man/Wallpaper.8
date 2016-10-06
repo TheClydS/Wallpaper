@@ -1,0 +1,39 @@
+.TH Wallpaper 1  "29 septembre, 2016" "VERSION: 0.1a" "MODIFIE LE FOND D'ECRAN"
+.SH NOM
+Wallpaper \- Modifie le fond d'écran
+.SH SYNOPSIS
+.B Wallpaper
+[\-h]
+[0]|[1]|[2]|[3]|[4]|[6] [chemin] [duree]
+.SH DESCRIPTION
+Quand elle est invoqué sans l'option, la commande Wallpaper modifie le fond d'écran en fonction du fichier de donnée ($HOME/.config/background/donnee).
+.TP
+\  0 Modifie le fond d'écran de manière automatique, répete le fond jusq'à remplir l'ecran
+.TP
+\  1 Modifie le fond d'écran en centrant l'image.
+.TP
+\  2 Modifie le fond d'écran,modifie l'image choisie en l'adaptant à la taille de l'écran
+.TP
+\  3 Modifie le fond d'écran modifie l'image choisi en appliquant un zoom  x1.5, redimensionne l'image à la taille de l'écran.
+.TP
+\  4 Modifie le fond d'écran, modifie l'image choisie en appliquant un zoom x2.5, centre l'image.
+.TP
+\  6 Modifie le fond d'écran, Cré un diaporama des images contenues dans le cheminet l'affiche pendant [duree] seconde
+.SH OPTIONS
+.TP
+\-h, \-\-help
+afficher un message d'aide et quitter.
+.SH EXAMPLE
+.TP
+\  Wallpaper 0 ~/Images/fond/fond.png
+.TP
+\  Walpaper 6 ~/Images/Fond 60
+.TP
+\  Wallpaper
+.SH Other
+.TP
+\  Le fichier donnee peut être créer manuellement ou via l'interface Background
+.SH AUTEUR
+TheClydS (theclyds (at) gmail.com)
+.SH VOIR AUSSI
+background(1)

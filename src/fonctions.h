@@ -1,6 +1,6 @@
 /*
  * Name : config.h
- * Auteur : NICOLAS FILIPPOZZI
+ * Auteur : TheClydS
  * Date : 30 september 2016
  * Version : 0.1a
  * Description : Page de fonctions

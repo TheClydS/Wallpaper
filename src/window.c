@@ -204,7 +204,6 @@
 				exit(EXIT_FAILURE);
 			}
 			filename=(path!=NULL)?path:opt->file;
-			printf("%s\n",filename);
 			img->im=imlib_load_image_with_error_return(filename,&err);
 			if ((err) || (!img->im)){
 		      switch (err){
@@ -350,7 +349,6 @@
 				printf("Impossible de réouvrir l'afficheur\n");
 				exit(EXIT_FAILURE);
 			}
-			printf("Dpy %p\n",dpy);
 			*win=RootWindow(dpy,DefaultScreen(dpy));
 			*depth=DefaultDepth(dpy,DefaultScreen(dpy));
 			//printf("Fonction initSecondary fin\n");
@@ -362,8 +360,6 @@
 			GC gc;
 			Atom prop_root,prop_esetroot,type;
 			prop_root=prop_esetroot=type= None;
-			//~ int format=-1;
-			//~ unsigned long length, after;
 			unsigned char *data_root = NULL;
 			unsigned char *data_esetroot = NULL;
 			//printf("Fin de déclaration des variables\n");
@@ -383,19 +379,6 @@
 			prop_root = XInternAtom(dpy, "_XROOTPMAP_ID", True);
 			prop_esetroot = XInternAtom(dpy, "ESETROOT_PMAP_ID", True);
 								   
-			//Recupération des proriétés existantes
-			//~ if (prop_root != None && prop_esetroot != None) {
-				//~ XGetWindowProperty(dpy, root, prop_root, 1L, 0L,False, AnyPropertyType, &type, &format, &length, &after, &data_root);
-				//~ if (type == XA_PIXMAP) {
-					//~ XGetWindowProperty(dpy, root,prop_esetroot, 0L, 1L,False, AnyPropertyType,&type, &format, &length, &after, &data_esetroot);
-					//~ if (data_root && data_esetroot) {
-						//~ if (type == XA_PIXMAP && *((Pixmap *) data_root) == *((Pixmap *) data_esetroot)) {
-								//~ XKillClient(dpy, *((Pixmap *) data_root));
-						//~ }
-					//~ }
-				//~ }
-			//~ }
-			
 			//libération 
 			if (data_root)
 				XFree(data_root);
@@ -453,7 +436,6 @@
 			XSync(win->dpy,False);
 			switch(opt->type){
 				case AUTOMATIC:							//CAs de selection AUTOMATIQUE
-					printf("Test de automatique \n");
 					setImage(opt,img,NULL);
 					automatic(img);
 					img->pixmap_1=XCreatePixmap(win->dpy,win->win,img->w,img->h,win->depth);
@@ -654,7 +636,6 @@ Taper Wallpaper -h pour afficher l'aide\n");
 				printf("Le fichier ou répertoire n'existe pas\n");
 				exit(EXIT_FAILURE);
 			}
-			printf("%s - Le fichier existe.\n",opt->file);
 			if(access(opt->file,R_OK)){
 				printf("Les droits de lecture ne sont pas présent sur : %s\n",argv[2]);
 				return 0;

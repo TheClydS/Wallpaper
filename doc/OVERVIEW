@@ -1,1 +1,27 @@
-documentation
+Wallpaper
+Modifie le fond d'écran
+
+Utilisation : 
+  Wallpaper -h pour afficher l'aide
+  Wallpaper [type_affichage] [chemin] [duree]
+  Wallpaper
+  
+  type_affichage : 
+    0 : mode automatique
+    1 : mode centré
+    2 : mode plein écran
+    3 : mode étiré
+    4 : mode zoom
+    6 : mode diaporama nécessite [duree]
+
+Informations :
+  -Un serveur X doit tourner.
+  -Si aucun paramêtre n'est fournit, le fichier de configuration (~/.config/background/donnee) est chargé.
+  -Seul le paramêtre [type_affichage] réglé à 6 demande une durée en seconde.
+  -Quand le paramêtre [type_affichage] est réglé à 6 le paramêtre [chemin] doit être un répertoire d'image.
+  -Pour une utilisation avec OpenBox ou similaire rajouter Wallpaper à votre autostart
+
+Example du fichier "donnee" : 
+[type_affichage]
+[chemin]
+[durée]

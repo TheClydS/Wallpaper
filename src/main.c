@@ -3,7 +3,7 @@
  * Auteur : TheClydS
  * Date : 25 septembre 2016
  * Version : 0.1a
- * Description : Programe Wallpaper permet d'afficher le fond d'ecran
+ * Description : Programe Wallpaper permet de modifier le fond d'ecran
  * 				 -une image de n'importe quel type grace Imlib2
  * 				 -5 types d'affichage au choix : 
  * 						- 0 :Automatique, affiche l'image dans sa taille d'origine et la répete pour remplir tous l'écran

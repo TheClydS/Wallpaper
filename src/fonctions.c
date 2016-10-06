@@ -143,7 +143,6 @@
 			}
 			closedir(rep);
 			tmp=delListElement(tmp,-1);
-			showList(tmp);
 			return tmp;
 		}
 	/* 2-2)Fichiers*/
@@ -160,8 +159,6 @@
 				for(i=0; i<3; i++){
 					tmp=addList(tmp,(const char*)donnee[i]);
 				}
-				//tmp=delListElement(tmp,-1);
-				showList(tmp);
 				return tmp;
 			}
 			freeList(tmp);

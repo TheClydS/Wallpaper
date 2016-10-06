@@ -1,6 +1,6 @@
 /*
  * Name : wallpaper
- * Auteur : NICOLAS FILIPPOZZI
+ * Auteur : TheClydS
  * Date : 25 septembre 2016
  * Version : 0.1a
  * Description : Programe Wallpaper permet d'afficher le fond d'ecran
